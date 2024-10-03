@@ -2,25 +2,14 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import '../globals.css';
 
-const NanumSquareNeoLt = localFont({
-	src: '../assets/fonts/NanumSquareNeoTTF-aLt.woff',
-	variable: '--font-nanum-square-neo-lt',
+const SyneExtraBold = localFont({
+	src: '../assets/fonts/Syne-ExtraBold.ttf',
+	variable: '--font-syne-extra-bold',
 });
-const NanumSquareNeoRg = localFont({
-	src: '../assets/fonts/NanumSquareNeoTTF-bRg.woff',
-	variable: '--font-nanum-square-neo-rg',
-});
-const NanumSquareNeoBd = localFont({
-	src: '../assets/fonts/NanumSquareNeoTTF-cBd.woff',
-	variable: '--font-nanum-square-neo-bd',
-});
-const NanumSquareNeoEb = localFont({
-	src: '../assets/fonts/NanumSquareNeoTTF-dEb.woff',
-	variable: '--font-nanum-square-neo-eb',
-});
-const NanumSquareNeoHv = localFont({
-	src: '../assets/fonts/NanumSquareNeoTTF-eHv.woff',
-	variable: '--font-nanum-square-neo-hv',
+
+const InconsolataMedium = localFont({
+	src: '../assets/fonts/Inconsolata-Medium.ttf',
+	variable: '--font-inconsolata-medium',
 });
 
 export const metadata: Metadata = {
@@ -35,10 +24,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body
-				className={`${NanumSquareNeoLt.variable} ${NanumSquareNeoRg.variable} ${NanumSquareNeoBd.variable} ${NanumSquareNeoEb.variable} ${NanumSquareNeoHv.variable} antialiased`}>
-				{children}
-			</body>
+			<body className={`${SyneExtraBold.variable} ${InconsolataMedium.variable} antialiased bg-background`}>{children}</body>
 		</html>
 	);
 }

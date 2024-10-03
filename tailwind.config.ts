@@ -9,11 +9,8 @@ const config: Config = {
 				foreground: 'var(--foreground)',
 			},
 			fontFamily: {
-				nanumSquareNeoLt: 'var(--font-nanum-square-neo-lt)',
-				nanumSquareNeoRg: 'var(--font-nanum-square-neo-rg)',
-				nanumSquareNeoBd: 'var(--font-nanum-square-neo-bd)',
-				nanumSquareNeoEb: 'var(--font-nanum-square-neo-eb)',
-				nanumSquareNeoHv: 'var(--font-nanum-square-neo-hv)',
+				syneExtraBold: 'var(--font-syne-extra-bold)',
+				inconsolataMedium: 'var(--font-inconsolata-medium)',
 			},
 		},
 	},
