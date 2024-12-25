@@ -5,7 +5,6 @@ function Navbar() {
 
 	useEffect(() => {
 		const sections = document.querySelectorAll('section');
-
 		const observerCallback = (entries: IntersectionObserverEntry[]) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
@@ -13,12 +12,9 @@ function Navbar() {
 				}
 			});
 		};
-
 		const observerOptions = { threshold: 0.6 };
 		const observer = new IntersectionObserver(observerCallback, observerOptions);
-
 		sections.forEach((section) => observer.observe(section));
-
 		return () => observer.disconnect();
 	}, []);
 
@@ -34,7 +30,7 @@ function Navbar() {
 
 	return (
 		<nav className="sticky top-2 w-full z-10 flex justify-end">
-			<ul className="flex gap-4 backdrop-blur-md px-4 py-2 rounded-full">
+			<ul className="flex gap-4 backdrop-blur-md px-4 py-2 rounded-full max-md:hidden">
 				<li
 					className={`cursor-pointer ${activeSection === 'aboutme' ? 'text-white' : 'text-gray-500'}`}
 					onClick={() => scrollToSection('aboutme')}>

@@ -12,7 +12,7 @@ function SkillLayout({ children, contents, i }: { children: React.ReactNode; con
 	const [hover, setHover] = useState(false);
 	return (
 		<div className={`${styles.flexBetween} relative`} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
-			<h1 className="font-GB text-[1.5rem] leading-[120%]">{children}</h1>
+			<h1 className="font-GB text-[1.5rem] leading-[120%] w-[7rem]">{children}</h1>
 			<ul className={`${styles.flexColumn} gap-[1.5rem] text-[1rem] w-[34rem]`}>
 				{contents.map((content) => (
 					<li className="">{content}</li>

@@ -29,7 +29,7 @@ function Skill({ id }: { id: string }) {
 			],
 		},
 		{
-			title: 'React',
+			title: 'React   ',
 			contents: [
 				'React 컴포넌트를 활용하여 웹 페이지를 구성할 수 있습니다.',
 				'React Hook을 사용하여 함수형 컴포넌트를 작성할 수 있습니다.',

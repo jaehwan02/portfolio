@@ -77,9 +77,9 @@ function Experience({ id }: { id: string }) {
 			<div className={`w-full`}>
 				{experiences.map((experience) => (
 					<div className={`${styles.flexBetween}`}>
-						<div className={`flex flex-col justify-start items-center`}>
-							<h1 className="font-GB text-[2.5rem]">{experience.year}</h1>
-							<i className="text-[1rem]">{experience.message}</i>
+						<div className={`flex flex-col justify-start w-[7rem]`}>
+							<h1 className="font-GB text-[2.5rem] max-md:text-[2rem]">{experience.year}</h1>
+							<i className="text-[1rem] max-md:text-[0.8rem]">{experience.message}</i>
 						</div>
 						<div className={`${styles.flexColumn} w-[34rem] gap-[1.5rem]`}>
 							{experience.contents.map((content) => (
