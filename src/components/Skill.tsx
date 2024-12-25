@@ -36,6 +36,14 @@ function Skill({ id }: { id: string }) {
 				'Redux, Zustand를 사용해 전역 상태를 관리할 수 있습니다.',
 			],
 		},
+		{
+			title: 'Fast\nAPI',
+			contents: [
+				'JWT를 사용하여 인증과 권한 부여를 구현할 수 있습니다.',
+				'FastAPI의 async/await를 사용하여 비동기 코드를 작성할 수 있습니다.',
+				'ORM을 사용하여 데이터베이스를 연동할 수 있습니다.',
+			],
+		},
 	];
 
 	return (

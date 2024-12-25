@@ -11,8 +11,8 @@ function Experience({ id }: { id: string }) {
 			message: 'Hello Wolrd!',
 			contents: [
 				{
-					name: '부산소프트웨어마이스터고등학교 1학년 2반',
-					role: '학급 회장',
+					name: '2024학년도 1학년 2반',
+					role: '반장',
 					github: null,
 					velog: null,
 				},
